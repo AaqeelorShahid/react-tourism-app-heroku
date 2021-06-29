@@ -53,7 +53,7 @@ class pack extends Component {
     return (
       <div >
         <div className="header">
-          <h1 style={{ textAlign:"center" }}>Hotels</h1>
+          <h1 style={{ textAlign:"center" }}>Tourism Packages</h1>
               <Button variant="success" style = {{height:"100%", width:700}}  onClick={()=>{ this.routeToAddPack() }}>Add Package</Button>
         </div>
         <div className="table" style = {{height:"100%", width:700}}>

@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:8090/packages"
+const BASE_URL = "https://tourism-app-springboot.herokuapp.com/packages"
 
 class packageServices {
 
