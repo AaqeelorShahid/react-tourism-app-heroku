@@ -1,0 +1,10 @@
+.cardSection{
+    margin-top: 80px;
+    padding: 70px;
+}
+
+.footer{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}

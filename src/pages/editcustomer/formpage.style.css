@@ -1,0 +1,13 @@
+
+body{
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+.form {
+    margin: 0 auto;
+    border: 2px grey solid;
+    border-radius: 20px;
+    padding: 20px;
+}
