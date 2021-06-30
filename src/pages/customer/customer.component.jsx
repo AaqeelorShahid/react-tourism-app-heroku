@@ -21,9 +21,15 @@ class customer extends Component {
   }
 
   routeToFormPage = (id) =>{
-    this.props.history.push({
-        pathname: `${this.props.match.url}/edit`,
-        state: {data: this.state.customerData[id]}
+    console.log(id)
+    this.state.customerData.map((data) => {
+      if(data.id === id){
+        console.log(data);
+        this.props.history.push({
+            pathname: `${this.props.match.url}/edit`,
+            state: {data: data}
+        })
+      }
     })
   }
 
@@ -68,7 +74,7 @@ class customer extends Component {
                   <td align="right">{row.name}</td>
                   <td align="right">{row.email}</td>
                   <td align="right">{row.address}</td>
-                  <td align="right"><Button onClick={()=>{ this.routeToFormPage(row.id - 1)}}>EDIT</Button></td>
+                  <td align="right"><Button onClick={()=>{ this.routeToFormPage(row.id)}}>EDIT</Button></td>
                   <td align="right"><Button variant="danger" onClick={()=>{ this.deleteUser(row.id)}} >REMOVE</Button></td>
                 </tr>
               ))}
